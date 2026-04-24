@@ -1,0 +1,56 @@
+<!-- Topbar Start -->
+<div class="container-fluid bg-dark py-2 d-none d-md-flex">
+    <div class="container">
+        <div class="d-flex justify-content-between topbar">
+            <div class="top-info">
+                <small class="me-3 text-white-50"><a href="#"><i class="fas fa-map-marker-alt me-2 text-secondary"></i></a>23 Ranking Street, New York</small>
+                <small class="me-3 text-white-50"><a href="#"><i class="fas fa-envelope me-2 text-secondary"></i></a>EmailExample.com</small>
+            </div>
+            <div id="note" class="text-secondary d-none d-xl-flex"><small>Note : We help you to Grow your Business</small></div>
+            <div class="top-link">
+                <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-facebook-f text-primary"></i></a>
+                <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-twitter text-primary"></i></a>
+                <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-instagram text-primary"></i></a>
+                <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle me-0"><i class="fab fa-linkedin-in text-primary"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Topbar End -->
+
+<!-- Navbar Start -->
+<div class="container-fluid bg-primary">
+    <div class="container">
+        <nav class="navbar navbar-dark navbar-expand-lg py-0">
+            <a [routerLink]="['/home']" class="navbar-brand">
+                <h1 class="text-white fw-bold d-block">Entre<span class="text-secondary">Tenia</span> </h1>
+            </a>
+            <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
+                <div class="navbar-nav ms-auto mx-xl-auto p-0">
+                    <a [routerLink]="['/home']" class="nav-item nav-link active text-secondary">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Sections</a>
+                        <div class="dropdown-menu rounded">
+                            <a [routerLink]="['/musica']" class="dropdown-item">Musica</a>
+                            <a [routerLink]="['/series']" class="dropdown-item">Series</a>
+                            <a [routerLink]="['/peliculas']" class="dropdown-item">Peliculas</a>
+                            <a [routerLink]="['/videojuegos']" class="dropdown-item">Videojuegos</a>
+                            <a [routerLink]="['/libros']" class="dropdown-item">Libros</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+            </div>
+            
+        </nav>
+    </div>
+</div>
+<!-- Navbar End -->
+
+<!-- Carousel Start -->
+
+<!-- Carousel End -->

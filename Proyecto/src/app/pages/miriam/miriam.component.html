@@ -1,0 +1,191 @@
+
+
+	<!-- Page info section -->
+	<section class="page-info-section set-bg" data-setbg="assets/img/miri.jpg">
+		<div class="pi-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-5 col-lg-6 text-white">
+						<h2>Miriam Miranda Rodriguez Morales</h2>
+						<input [(ngModel)]="holi"  class="form-control form-control-lg" disabled />
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Page info section -->
+
+
+	<!-- Page section -->
+	<section class="page-section review-page spad">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="review-item">
+						<div class="review-cover set-bg" data-setbg="assets/img/suga.jpg">
+						</div>
+						<div class="review-text">
+							<h4>Mascota</h4>
+							<p>Mi mascota se llama Suga, es un gato naranja, gordo pero muy bonito</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="review-item">
+						<div class="review-cover set-bg" data-setbg="assets/img/me.gif">
+						</div>
+						<div class="review-text">
+							<h4>Carrera</h4>
+					
+							<p>Estudio ingeneria informatica, actualmente estudio el 6to semestre</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="review-item">
+						<div class="review-cover set-bg" data-setbg="assets/img/tg.jpg">
+						</div>
+						<div class="review-text">
+							<h4>Anime</h4>
+							<p>Mi anime favorito se llama Tokyo Ghoul, es un anime muy interesante sobre aseptar tus moustros internos y ser diferente.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="review-item">
+						<div class="review-cover set-bg" data-setbg="assets/img/laglo.jpg">
+						</div>
+						<div class="review-text">
+							<h4>Kdrama</h4>
+							<p>Mi kdrama favorito es la gloria, es un drama coreano que trato sobre la verganza de una mujer contra los que arruinaron su vida durante la secundaria, todo cae por su propio peso, y de ayuda a pensar en que todo lo que haces tiene una conseciencia</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="review-item">
+						<div class="review-cover set-bg" data-setbg="assets/img/hp.jpg">
+						</div>
+						<div class="review-text">
+							<h4>Pelicula</h4>
+							<p>Mi pelicula favorita se llama Harry potter y el princionero de Azcaban. es parte de la saga de harry potter.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="review-item">
+						<div class="review-cover set-bg" data-setbg="assets/img/hfp.jpg">
+						</div>
+						<div class="review-text">
+							<h4>Casa de hogwarts</h4>
+							<p> Hufflepuff </p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6" id="users">
+					<!-- <article *ngFor="let user of users.data">
+						<div >
+							<img src="{{user.avatar}}" alt="">
+							
+						</div>
+						<div>
+							<p>{{user.id}}</p>
+							<h4>{{user.first_name}} {{user.last_name}}</h4>
+							<p>{{user.email}}</p>
+						</div>
+					</article> -->
+					<article *ngFor="let user of users.data | slice:0:(users.data.length / 2)" class="about-me">
+						<div class="avatar">
+							<img [src]="user.avatar" [alt]="user.first_name + ' ' + user.last_name">
+						</div>
+						<div class="user-info">
+							<p class="user-id">{{user.id}}</p>
+							<h4 class="user-name">{{user.first_name}} {{user.last_name}}</h4>
+							<p class="user-email">{{user.email}}</p>
+						</div>
+					</article>
+					
+				</div>
+				<div class="col-md-6">
+					<article *ngFor="let user of users.data | slice:(users.data.length / 2):users.data.length" class="about-me">
+						<div class="avatar">
+							<img [src]="user.avatar" [alt]="user.first_name + ' ' + user.last_name">
+						</div>
+						<div class="user-info">
+							<p class="user-id">{{user.id}}</p>
+							<h4 class="user-name">{{user.first_name}} {{user.last_name}}</h4>
+							<p class="user-email">{{user.email}}</p>
+						</div>
+					</article>
+				</div>
+				
+			
+				
+				
+			</div>
+			<div class="text-center pt-4">
+				<button class="site-btn btn-sm">Esto es solo un poco de mi</button>
+			</div>
+		</div>
+	</section>
+	<!-- Page section end -->
+
+
+	<!-- Review section -->
+	<section class="review-section revie
+	Build fully working website and apps from scratch
+	Add new features in your existing product
+	Execw-dark spad set-bg" data-setbg="assets/img/bts.jpg">
+		<div class="container">
+			<div class="section-title text-white">
+				<div class="cata new">KPOP</div>
+				<h2>Top grupos favoritos</h2>
+			</div>
+			<div class="row text-white">
+				<div class="col-lg-3 col-md-6">
+					<div class="review-item">
+						<div class="review-cover set-bg" data-setbg="assets/img/bang.jpg">
+							<div class="score yellow">1</div>
+						</div>
+						<div class="review-text">
+							<h5>BTS</h5>
+							<p>BTS es un grupo bajo la agencia Big Hit, debuto en el año 2013.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="review-item">
+						<div class="review-cover set-bg" data-setbg="assets/img/twice.jpg">
+							<div class="score purple">2</div>
+						</div>
+						<div class="review-text">
+							<h5>Twice</h5>
+							<p>Es un grupo bajo JYP conformado por 9 integrantes, debutaron en el año 2015.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="review-item">
+						<div class="review-cover set-bg" data-setbg="assets/img/txt.jpg">
+							<div class="score green">3</div>
+						</div>
+						<div class="review-text">
+							<h5>TXT</h5>
+							<p>TXT es un grupo conformado por 5 chicos que debutaron en el año 2019 bajo BigHit.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="review-item">
+						<div class="review-cover set-bg" data-setbg="assets/img/ena.jpg">
+							<div class="score pink">4</div>
+						</div>
+						<div class="review-text">
+							<h5>ENHYPEN</h5>
+							<p>Enhypen es un grupo conformado por 7 chicos bajo la agencia Belift Lab, debutaron en el año 2020.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Review section end -->

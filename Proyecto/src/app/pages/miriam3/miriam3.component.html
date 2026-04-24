@@ -1,0 +1,19 @@
+<div style="margin-bottom: 50px; margin-top: 25px;">
+    <label for="">Categoria: </label>
+    <!-- <input [(ngModel)]="cat" type="text"> -->
+     <select [(ngModel)]="cat" (change)="cargarNew()">
+        <option *ngFor="let opcion of opciones" [value]="opcion.valor">{{opcion.nombre}}</option>
+     </select>
+    <label for="">{{cat}}</label>
+    <input (click)="cargarNew()" type="button" value="Consultar">
+   
+</div>
+
+<section>
+		<article *ngFor="let article of articles.articles">
+            <img style="width: 200px;" src="{{article.urlToImage}}" alt="">
+            <h4>{{article.title}}</h4>
+            <a href="{{article.url}}">{{article.url}}</a>
+        </article>
+</section>
+

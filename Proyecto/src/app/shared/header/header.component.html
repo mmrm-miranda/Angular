@@ -1,0 +1,28 @@
+
+
+<!-- Header section -->
+<header class="header-section">
+  <div class="container">
+    <!-- logo -->
+    <a class="site-logo" href="index.html">
+      <img src="assets/img/logo.png" alt="">
+    </a>
+    <div class="user-panel">
+      <a href="" (click)="irALogin()">Login</a>  
+    </div>
+    <!-- responsive -->
+    <div class="nav-switch">
+      <i class="fa fa-bars"></i>
+    </div>
+    <!-- site menu -->
+    <nav class="main-menu">
+      <ul>
+        <li><a [routerLink]="['/home']">Home</a></li>
+        <li><a [routerLink]="['/me']">About me</a></li>
+        <li><a [routerLink]="['/tu']">Yo</a></li>
+        <li><a [routerLink]="['/yo']">Ho</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>

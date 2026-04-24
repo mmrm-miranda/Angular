@@ -1,0 +1,72 @@
+
+
+<div class="container" *ngIf="cli">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="page-content">
+
+        <!-- ***** Featured Games Start ***** -->
+        <div class="row">
+          <div class="col-lg-8">
+              <div class="cardContainer">
+                  <div class="card">
+
+                  <input [(ngModel)]="cit" type="text" class="city">
+                  <!-- <p class="city">PINK CITY</p> -->
+                  <p class="weather">{{cli.location.name}} - {{cli.location.country}}</p>
+                  <img src="{{ cli.current.weather_icons }}" alt="" class="weather-icon">
+                  <!-- <svgwidth="100"
+                      height="100"
+                    class="weather"
+                    version="1.1"
+                    id="Layer_1"
+                    x="0px"
+                    y="0px"
+                    width="50px"
+                    height="50px"
+                    viewBox="0 0 100 100"
+                    xml:space="preserve"
+                >
+                    
+                </svgwidth=> -->
+                <!-- <image
+                      href="{{ climas.climas.weather_icons }}"
+                      width="100"
+                      height="100"
+                      x="0"
+                      y="0"
+                      alt=""
+                    ></image> -->
+                  <p class="temp"></p>
+                  <div class="minmaxContainer">
+                      <div class="min">
+                      <p class="minHeading">Tem</p>
+                      <p class="minTemp">{{cli.current.temperature}}</p>
+                      </div>
+                      <div class="max">
+                      <p class="maxHeading">Humy</p>
+                      <p class="maxTemp">{{cli.current.humidity}}</p>
+                      </div>
+                  </div>
+                  </div>
+              </div>
+
+
+          </div>
+          <div class="col-lg-4">
+            <!-- From Uiverse.io by Mike11jr --> 
+              <div class="scene">
+                  <div class="cube">
+                  <span class="side top" (click)="cargarclima()" type="button">Consultar</span>
+                  <span class="side front">Clima</span>
+                  
+                  </div>
+              </div>
+          </div>
+        </div>
+        <!-- ***** Featured Games End ***** -->
+
+      </div>
+    </div>
+  </div>
+</div>

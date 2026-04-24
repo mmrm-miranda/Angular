@@ -1,0 +1,56 @@
+section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+article {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 300px;
+    text-align: center;
+    background-color: #f9f9f9;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden; /* Asegura que el contenido no se desborde */
+    word-wrap: break-word; /* Permite que las palabras largas se ajusten */
+}
+
+article:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+article img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out; /* Transición suave para el efecto */
+}
+
+article img:hover {
+    transform: scale(1.1); /* Agranda la imagen al hacer hover */
+}
+
+article h4 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+article a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+    display: block; /* Asegura que el enlace ocupe toda la línea */
+    margin-top: 10px; /* Espaciado entre el enlace y otros elementos */
+    word-wrap: break-word; /* Ajusta las palabras largas */
+}
+
+article a:hover {
+    text-decoration: underline;
+}

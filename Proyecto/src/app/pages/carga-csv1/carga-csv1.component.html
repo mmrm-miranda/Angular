@@ -1,0 +1,21 @@
+<input type="file" (change)="onFileSelected($event)"  accept=".csv" />
+
+<table border="1" style="margin-top:  20px; border-collapse: collapse">
+    <thead>
+        <tr>
+            <th *ngFor="let col of colummnNames">{{ col }}</th>
+            
+            <!-- <th> {{colummnNames[2]}}</th> -->
+        </tr>                                  
+    </thead>
+    <tbody>
+        <tr *ngFor="let row of rows">
+            <td *ngFor="let cell of row">{{ cell }}</td>
+
+        </tr>
+
+        <!-- <tr *ngFor="let cell of tiposUnicos">
+            {{cell}}
+        </tr> -->
+    </tbody>
+</table>

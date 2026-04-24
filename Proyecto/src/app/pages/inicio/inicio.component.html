@@ -1,0 +1,38 @@
+<div class="login-container">
+    <div class="login-box">
+      <h2 class="login-title">Iniciar Sesión</h2>
+      <form class="login-form" (ngSubmit)="iniciarSesion()">
+        <!-- Campo para el email -->
+        <div class="form-group">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            [(ngModel)]="email"
+            placeholder="Correo electrónico"
+            required
+            class="form-control"
+          />
+        </div>
+        <!-- Campo para la contraseña -->
+        <div class="form-group">
+          <input
+            type="password"
+            name="password"
+            id="password"
+            [(ngModel)]="password"
+            placeholder="Contraseña"
+            required
+            class="form-control"
+          />
+        </div>
+        <!-- Botón para enviar el formulario -->
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary btn-block">Iniciar Sesión</button>
+        </div>
+        <!-- Mensaje de error si ocurre algún problema -->
+        <div *ngIf="mensaje" class="error-message">{{ mensaje }}</div>
+      </form>
+
+    </div>
+  </div>
